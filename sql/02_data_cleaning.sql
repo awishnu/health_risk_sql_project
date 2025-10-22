@@ -1,5 +1,4 @@
 -- Create a cleaned copy of the table with normalized text
-
 USE health_risk;
 
 DROP TABLE IF EXISTS health_data_clean;
