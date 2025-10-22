@@ -1,0 +1,6 @@
+id,age,weight,height,exercise,sleep,sugar_intake,smoking,alcohol,married,profession,bmi,health_risk
+1,56,67,195,low,6.1,medium,yes,yes,yes,office_worker,17.6,high
+2,69,76,170,high,6.9,high,no,no,no,teacher,26.3,high
+3,46,106,153,high,6.6,low,yes,no,no,artist,45.3,high
+4,32,54,186,medium,8.5,medium,no,no,no,artist,15.6,low
+5,60,98,195,high,8,low,no,no,yes,teacher,25.8,high

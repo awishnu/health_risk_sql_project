@@ -1,0 +1,11 @@
+id,age,weight,height,exercise,sleep,sugar_intake,smoking,alcohol,married,profession,bmi,health_risk,lifestyle_risk_score
+1,56,67,195,low,6.1,medium,yes,yes,yes,office_worker,17.6,high,5
+2,69,76,170,high,6.9,high,no,no,no,teacher,26.3,high,2
+3,46,106,153,high,6.6,low,yes,no,no,artist,45.3,high,2
+4,32,54,186,medium,8.5,medium,no,no,no,artist,15.6,low,1
+5,60,98,195,high,8,low,no,no,yes,teacher,25.8,high,0
+6,25,96,160,medium,3.8,medium,no,no,yes,farmer,37.5,high,2
+7,78,64,168,medium,9.9,high,no,no,yes,artist,22.7,high,2
+8,38,76,194,low,6.6,medium,yes,no,yes,driver,20.2,high,4
+9,56,58,158,medium,9.6,medium,no,no,yes,office_worker,23.2,low,1
+10,75,94,147,none,8.1,medium,yes,no,no,farmer,43.5,high,3
