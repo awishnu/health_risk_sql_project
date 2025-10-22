@@ -9,7 +9,7 @@ SELECT
   SUM(CASE WHEN exercise IS NULL THEN 1 ELSE 0 END) AS null_exercise
 FROM health_data;
 
--- Standardize all categorical text (e.g., lowercase) and create a cleaned copy of the table
+-- Standardize all categorical text and create cleaned copy
 DROP TABLE IF EXISTS health_data_clean;
 
 CREATE TABLE health_data_clean AS
