@@ -1,4 +1,3 @@
--- Create a cleaned copy of the table with normalized text
 DROP TABLE IF EXISTS health_data;
 
 CREATE TABLE health_data (
