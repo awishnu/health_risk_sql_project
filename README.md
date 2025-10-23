@@ -117,27 +117,6 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 
 ---
 
-## 📎 Project Files  
-
-📂 health-risk-sql-project/
-├── data/
-│   ├── Lifestyle_and_Health_Risk_Prediction_Synthetic_Dataset.csv
-├── results/
-│   ├── 03_import_and_test.csv
-│   ├── 04_a_inspect_data.csv
-│   ├── 04_b_check_for_missing.csv
-│   ├── 05_a_overview_statistic.csv
-│   ├── 05_b_health_risk_by_exercise.csv
-│   ├── 05_c_smoking_alcohol.csv
-│   ├── 05_d_bmi_category_and_health_risk.csv
-│   ├── 05_e_health_risk_by_profession.csv
-│   ├── 05_f_simple-lifestyle_risk_score.csv
-└── README.md
-└── setup_instructions.md
-
-
----
-
 ## 🌟 Author  
 **Ah Wishnu**  
 Finance professional transitioning into data analytics — using SQL and AI tools to uncover insights and improve decision-making.  
