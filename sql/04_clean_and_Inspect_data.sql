@@ -9,7 +9,24 @@ SELECT
   SUM(CASE WHEN exercise IS NULL THEN 1 ELSE 0 END) AS null_exercise
 FROM health_data;
 
--- C. Standardize all categorical text and create cleaned copy
+-- C. Find suspicious ages and BMI values
+SELECT COUNT(*) AS too_young 
+FROM health_data_clean 
+WHERE age < 0;
+
+SELECT COUNT(*) AS too_old
+FROM health_data_clean
+WHERE age > 120;
+
+SELECT COUNT(*) AS invalid_bmi_low
+FROM health_data_clean
+WHERE bmi <= 0;
+
+SELECT COUNT(*) AS invalid_bmi_high
+FROM health_data_clean
+WHERE bmi > 100;
+
+-- D. Standardize all categorical text and create cleaned copy
 DROP TABLE IF EXISTS health_data_clean;
 
 CREATE TABLE health_data_clean AS
