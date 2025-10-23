@@ -1,4 +1,4 @@
--- 1. Overview statistics
+-- A. Overview statistics
 SELECT 
   COUNT(*) AS total_records,
   ROUND(AVG(age),2) AS avg_age,
@@ -7,7 +7,7 @@ SELECT
   ROUND(SUM(CASE WHEN health_risk='high' THEN 1 ELSE 0 END)*100.0/COUNT(*),2) AS pct_high_risk
 FROM health_data_clean;
 
--- 2. Health risk by exercise level
+-- B. Health risk by exercise level
 SELECT exercise,
        COUNT(*) AS total_people,
        ROUND(SUM(CASE WHEN health_risk='high' THEN 1 ELSE 0 END)*100.0/COUNT(*),2) AS high_risk_pct
@@ -15,7 +15,7 @@ FROM health_data_clean
 GROUP BY exercise
 ORDER BY high_risk_pct DESC;
 
--- 3. Smoking + alcohol combinations
+-- C. Smoking + alcohol combinations
 SELECT smoking, alcohol,
        COUNT(*) AS total,
        ROUND(SUM(CASE WHEN health_risk='high' THEN 1 ELSE 0 END)*100.0/COUNT(*),2) AS high_risk_pct
@@ -23,7 +23,7 @@ FROM health_data_clean
 GROUP BY smoking, alcohol
 ORDER BY high_risk_pct DESC;
 
--- 4. BMI category & health risk
+-- D. BMI category & health risk
 SELECT 
   CASE 
     WHEN bmi < 18.5 THEN 'Underweight'
@@ -37,7 +37,7 @@ FROM health_data_clean
 GROUP BY bmi_category
 ORDER BY high_risk_pct DESC;
 
--- 5. Health risk by profession
+-- E. Health risk by profession
 SELECT profession,
        COUNT(*) AS total_people,
        ROUND(SUM(CASE WHEN health_risk='high' THEN 1 ELSE 0 END)*100.0/COUNT(*),2) AS high_risk_pct
@@ -46,7 +46,7 @@ GROUP BY profession
 ORDER BY high_risk_pct DESC
 LIMIT 10;
 
--- 6. Simple lifestyle risk score
+-- F. Simple lifestyle risk score
 SELECT *,
     (CASE WHEN exercise='high' THEN 0 WHEN exercise='medium' THEN 1 ELSE 2 END +
      CASE WHEN sleep>=7 THEN 0 ELSE 1 END +
