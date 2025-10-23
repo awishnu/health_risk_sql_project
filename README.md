@@ -102,6 +102,10 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 
 ---
 
+<img width="1600" height="1400" alt="Code_Generated_Image" src="https://github.com/user-attachments/assets/337a88ca-d850-4c87-8bea-c0432790d35b" />
+
+---
+
 ## 🧠 8. Insights & Takeaways  
 - Regular exercise and **7+ hours of sleep** are associated with reduced health risk.  
 - Combined smoking and alcohol consumption drastically increases health risk (100%).  
