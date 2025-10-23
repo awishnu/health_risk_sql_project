@@ -137,8 +137,14 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 │   ├── 05_d_bmi_category_and_health_risk.csv
 │   ├── 05_e_health_risk_by_profession.csv
 │   ├── 05_f_simple_lifestyle_risk_score.csv
-├── results/
+├── sql/
+│   ├── 01_create_database.csv
+│   ├── 02_create_the_table_scheme.csv
+│   ├── 03_import_and_test_csv.csv
+│   ├── 04_cleean_and_inspect_data.csv
+│   ├── 05_analysis.csv
 └── README.md
+└── setup_instruction.md
 ```
 
 ---
