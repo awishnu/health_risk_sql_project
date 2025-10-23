@@ -1,0 +1,10 @@
+# .gitignore
+*.pyc
+__pycache__/
+.vscode/
+.env
+*.db
+*.sqlite
+health_risk.db
+*.log
+.DS_Store
