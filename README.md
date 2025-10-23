@@ -118,7 +118,8 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 ---
 
 ## 📎 Project Files  
-📂 health-risk-sql-analysis/
+
+📂 health-risk-sql-project/
 ├── data/
 │   ├── Lifestyle_and_Health_Risk_Prediction_Synthetic_Dataset.csv
 ├── results/
