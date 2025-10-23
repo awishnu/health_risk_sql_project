@@ -121,6 +121,23 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 
 ---
 
+## 📎 Project Files  
+```
+📂 health-risk-sql-analysis/
+├── data/
+│   ├── Lifestyle_and_Health_Risk_Prediction_Synthetic_Dataset.csv
+├── health_risk_analysis.sql
+├── results/
+│   ├── overview.csv
+│   ├── exercise_risk.csv
+│   ├── bmi_risk.csv
+│   ├── smoking_alcohol.csv
+│   ├── profession_risk.csv
+└── README.md
+```
+
+---
+
 ## 🌟 Author  
 **Ah Wishnu**  
 Finance professional transitioning into data analytics — using SQL and AI tools to uncover insights and improve decision-making.  
