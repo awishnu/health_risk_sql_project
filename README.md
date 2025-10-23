@@ -1,33 +1,31 @@
-# 🩺 Health Risk Analysis using SQL
+# 🩺 Health Risk Analysis (SQL Portfolio Project)
 
-## 📘 Overview
-This project explores global health risk data to analyze obesity, smoking, and alcohol consumption trends using SQL.
+## 📘 Project Overview
+This project explores lifestyle and health risk relationships using SQL in MySQL Workbench.  
+Dataset: *Lifestyle and Health Risk Prediction (Synthetic Dataset)*
 
-## 🧰 Tools Used
+## 🧱 Database Setup
+- Created a database `health_risk`
+- Defined schema with fields: age, weight, height, exercise, sleep, sugar_intake, smoking, alcohol, married, profession, bmi, health_risk
+
+## 🧹 Data Cleaning
+- Standardized text inputs (e.g., lowercase)
+- Checked for nulls and invalid BMI/age values
+- Created cleaned table `health_data_clean`
+
+## 📊 Analysis Highlights
+- % of population with **high health risk**
+- Impact of **exercise levels** on health risk
+- Combined effect of **smoking and alcohol**
+- **BMI category** correlation with health risk
+- Professions with **highest risk levels**
+
+## 🧠 Tools Used
 - MySQL Workbench
-- MySQL Server
-- CSV Dataset (from [source name])
-- GitHub for portfolio hosting
+- GitHub for portfolio documentation
 
-## 🎯 Objectives
-- Identify regional patterns in obesity and lifestyle diseases.
-- Measure correlation between alcohol use, smoking, and obesity.
-- Practice SQL aggregation, joins, and subqueries.
+## 📎 Insights
+- People with **low exercise** show higher health risk.
+- **Obese** group has the highest high-risk percentage.
+- **Smoking + alcohol** combination drastically increases risk.
 
-## 🧮 Key SQL Techniques
-- `JOIN` and `GROUP BY`
-- `CTE` (Common Table Expressions)
-- Window Functions (`ROW_NUMBER`, `RANK`)
-- Subqueries
-- Aggregate Functions (`AVG`, `COUNT`, `SUM`)
-
-## 📊 Example Query
-```sql
-SELECT *,
-    (CASE WHEN exercise='high' THEN 0 WHEN exercise='medium' THEN 1 ELSE 2 END +
-     CASE WHEN sleep>=7 THEN 0 ELSE 1 END +
-     CASE WHEN sugar_intake='high' THEN 1 ELSE 0 END +
-     CASE WHEN smoking='yes' THEN 1 ELSE 0 END +
-     CASE WHEN alcohol='yes' THEN 1 ELSE 0 END) AS lifestyle_risk_score
-FROM health_data_clean
-LIMIT 10;
