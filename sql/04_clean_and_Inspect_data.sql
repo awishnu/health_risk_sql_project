@@ -1,15 +1,15 @@
--- check data shape
+-- A. check data shape
 SELECT COUNT(*) AS total_rows 
 FROM health_data;
 
--- Check for missing or strange values
+-- B. Check for missing or strange values
 SELECT 
   SUM(CASE WHEN age IS NULL THEN 1 ELSE 0 END) AS null_age,
   SUM(CASE WHEN bmi IS NULL THEN 1 ELSE 0 END) AS null_bmi,
   SUM(CASE WHEN exercise IS NULL THEN 1 ELSE 0 END) AS null_exercise
 FROM health_data;
 
--- Standardize all categorical text and create cleaned copy
+-- C. Standardize all categorical text and create cleaned copy
 DROP TABLE IF EXISTS health_data_clean;
 
 CREATE TABLE health_data_clean AS
