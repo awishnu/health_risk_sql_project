@@ -126,13 +126,18 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 📂 health-risk-sql-analysis/
 ├── data/
 │   ├── Lifestyle_and_Health_Risk_Prediction_Synthetic_Dataset.csv
-├── health_risk_analysis.sql
+│   ├── complate.sql
 ├── results/
-│   ├── overview.csv
-│   ├── exercise_risk.csv
-│   ├── bmi_risk.csv
-│   ├── smoking_alcohol.csv
-│   ├── profession_risk.csv
+│   ├── 03_import_and_test.csv
+│   ├── 04_a_inspect_data.csv
+│   ├── 04_b_check_for_missing.csv
+│   ├── 05_a_overview_statistic.csv
+│   ├── 05_b_health_risk_by_exercise.csv
+│   ├── 05_c_smiking_alcohol.csv
+│   ├── 05_d_bmi_category_and_health_risk.csv
+│   ├── 05_e_health_risk_by_profession.csv
+│   ├── 05_f_simple_lifestyle_risk_score.csv
+├── results/
 └── README.md
 ```
 
