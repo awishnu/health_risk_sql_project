@@ -1,26 +1,31 @@
-# 🩺 Health Risk Analysis using MySQL
+# 🩺 Health Risk Analysis using SQL
 
-## 🎯 Objective
-Analyze synthetic health and lifestyle data using SQL to uncover patterns related to health risk.
+## 📘 Overview
+This project explores global health risk data to analyze obesity, smoking, and alcohol consumption trends using SQL.
 
 ## 🧰 Tools Used
 - MySQL Workbench
 - MySQL Server
-- CSV Dataset (Synthetic)
-- GitHub for documentation
+- CSV Dataset (from [source name])
+- GitHub for portfolio hosting
 
-## 📊 Key SQL Tasks
-1. Data import and cleaning
-2. Descriptive statistics
-3. Health risk by lifestyle factors
-4. BMI categorization
-5. Profession-based risk analysis
+## 🎯 Objectives
+- Identify regional patterns in obesity and lifestyle diseases.
+- Measure correlation between alcohol use, smoking, and obesity.
+- Practice SQL aggregation, joins, and subqueries.
 
-## 📈 Example Findings
-- People with **low exercise** and **high sugar intake** show the highest health risk.
-- **Teachers** and **engineers** have better average health metrics than **office workers**.
-- Higher **BMI** strongly correlates with higher health risk.
+## 🧮 Key SQL Techniques
+- `JOIN` and `GROUP BY`
+- `CTE` (Common Table Expressions)
+- Window Functions (`ROW_NUMBER`, `RANK`)
+- Subqueries
+- Aggregate Functions (`AVG`, `COUNT`, `SUM`)
 
-## 🧠 Next Steps
-- Create visualizations in Tableau
-- Build a Streamlit dashboard connected to MySQL
+## 📊 Example Query
+```sql
+SELECT region, 
+       ROUND(AVG(obesity_rate), 2) AS avg_obesity, 
+       ROUND(AVG(smoking_rate), 2) AS avg_smoking
+FROM health_data
+GROUP BY region
+ORDER BY avg_obesity DESC;
