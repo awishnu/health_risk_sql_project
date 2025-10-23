@@ -23,9 +23,11 @@ This project explores global health risk data to analyze obesity, smoking, and a
 
 ## 📊 Example Query
 ```sql
-SELECT region, 
-       ROUND(AVG(obesity_rate), 2) AS avg_obesity, 
-       ROUND(AVG(smoking_rate), 2) AS avg_smoking
-FROM health_data
-GROUP BY region
-ORDER BY avg_obesity DESC;
+SELECT *,
+    (CASE WHEN exercise='high' THEN 0 WHEN exercise='medium' THEN 1 ELSE 2 END +
+     CASE WHEN sleep>=7 THEN 0 ELSE 1 END +
+     CASE WHEN sugar_intake='high' THEN 1 ELSE 0 END +
+     CASE WHEN smoking='yes' THEN 1 ELSE 0 END +
+     CASE WHEN alcohol='yes' THEN 1 ELSE 0 END) AS lifestyle_risk_score
+FROM health_data_clean
+LIMIT 10;
