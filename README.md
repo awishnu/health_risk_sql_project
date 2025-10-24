@@ -14,7 +14,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 
 ## 🧱 1. Dataset Information  
 **File:** `Lifestyle_and_Health_Risk_Prediction_Synthetic_Dataset.csv`  
-**Fields:** https://www.kaggle.com/datasets/miadul/lifestyle-and-health-risk-prediction  
+**Source:** https://www.kaggle.com/datasets/miadul/lifestyle-and-health-risk-prediction  
 **Records:** 5,000  
 **Fields:** `age`, `bmi`, `sleep`, `exercise`, `smoking`, `alcohol`, `profession`, `health_risk`, and others.
 
