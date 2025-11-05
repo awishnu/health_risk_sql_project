@@ -23,7 +23,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 ## 📊 2. Overview Statistics  
 
 | Metric                    | Value         |
-|---------------------------|:-------------:|
+|:--------------------------|--------------:|
 | Total Records             | 5,000         |
 | Average Age               | 48.81 years   |
 | Average BMI               | 26.84         |
@@ -37,7 +37,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 ## 🏃 3. Health Risk by Exercise Level  
 
 | Exercise Level | Total People | High Risk % |
-|----------------|-------------:|-------------:|
+|:---------------|-------------:|-------------:|
 | Low            | 1,272        | 83.73%      |
 | None           |   743        | 82.64%      |
 | High           | 1,000        | 60.90%      |
