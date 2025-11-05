@@ -50,7 +50,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 ## 🚬 4. Smoking & Alcohol Impact  
 
 | Smoking | Alcohol | Total   | High Risk % |
-|---------|---------|---------|-------------|
+|:--------|:--------|--------:|------------:|
 | Yes     | Yes     |     249 | **100.00%** |
 | Yes     | No      |     728 | 91.07%      |
 | No      | Yes     |   1,010 | 80.20%      |
@@ -63,7 +63,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 ## ⚖️ 5. BMI Category and Health Risk  
 
 | BMI Category | Total | High Risk % |
-|--------------|--------|-------------|
+|:-------------|-------:|------------:|
 | Obese       | 1,659  | 88.25%      |
 | Overweight  | 1,067  | 87.72%      |
 | Normal      | 1,453  | 48.80%      |
@@ -76,7 +76,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 ## 🧑‍💼 6. Health Risk by Profession  
 
 | Profession     | Total People | High Risk % |
-|----------------|-------------:|-------------:|
+|:---------------|-------------:|-------------:|
 | Driver         |     631      | 72.42%       |
 | Engineer       |     616      | 70.94%       |
 | Teacher        |     612      | 70.75%       |
@@ -92,7 +92,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 
 ## 🧮 7. Example of Lifestyle Risk Scoring  
 | ID | Age | Exercise | Sleep | Smoking | Alcohol | BMI  | Health Risk | Lifestyle Risk Score |
-|----|-----|----------|-------|---------|---------|------|-------------|----------------------|
+|----|-----|:---------|-------|---------|---------|------|-------------|----------------------|
 | 1  | 56  | Low      | 6.1   | Yes     | Yes     | 17.6 | High        | 5                    |
 | 2  | 69  | High     | 6.9   | No      | No      | 26.3 | High        | 2                    |
 | 3  | 46  | High     | 6.6   | Yes     | No      | 45.3 | High        | 2                    |
