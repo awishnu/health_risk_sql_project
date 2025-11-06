@@ -151,8 +151,7 @@ The analysis was conducted entirely in **MySQL Workbench**, with results publish
 ---
 
 ## 🌟 Author  
-**Ah Wishnu**  
-Finance professional transitioning into data analytics — using SQL and AI tools to uncover insights and improve decision-making.  
+**Ahmad Wishnu**   
 📍 Based in Indonesia  
 🔗 [GitHub Portfolio](https://github.com/awishnu/health_risk_sql_project) | [LinkedIn](https://linkedin.com/in/ahmad-wishnu/)
 
